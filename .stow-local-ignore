@@ -1,5 +1,8 @@
 \.git
 install.sh
 misc
+sway
+swaync
+sway_pc
 #LICENCSE
 ^/.*\.org
