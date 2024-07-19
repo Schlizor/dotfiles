@@ -98,6 +98,14 @@ cd
 
 install_with_yay "${packages[@]}"
 
+#-----------------------Install ZSH Plugins-----------------------------------------
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git \
+  ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/fast-syntax-highlighting
+
+
 #------------------------Reboot if wanted-------------------------------------------
 
 read -p "Möchten Sie das System jetzt neu starten? (j/n): " answer
