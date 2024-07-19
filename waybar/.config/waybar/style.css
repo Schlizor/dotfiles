@@ -59,6 +59,13 @@
   min-width: 25px;
 }
 
+#custom-power{
+  background: @red;
+  margin: 2px 2px 2px 2px;
+  padding: 4px 11px 4px 11px;
+  border-radius: 4px;
+}
+
 #mode, #battery, #cpu, #memory, #network, #pulseaudio, #backlight, #custom-storage, #custom-notification, #custom-weather, #custom-mail, #clock, #temperature, #language{
   margin: 2px 2px 2px 2px;
   padding: 4px 11px 4px 11px;
@@ -88,7 +95,7 @@
 #window {
   font-size: 0.9em;
 	font-weight: 400;
-	font-family: sans-serif;
+	font-family: monospace;
 }
 
 #language {

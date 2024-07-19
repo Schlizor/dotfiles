@@ -1,12 +1,4 @@
-/*
-Arc-Dark Color Scheme
-*/
-
-/* @define-color highlight #e30b9b; */
-@define-color highlight #f7768e;
-@define-color base1  rgba(0,0,0,0.2);
-@define-color base2 rgba(0,0,0,0.8);
-@define-color base3  rgba(0,0,0,0.1);
+@import "frappe.css";
 
 *{
     font-family: JetBrains Mono Nerd Font;
@@ -16,9 +8,10 @@ window {
     /* border: 1px solid @highlight; */
     border-radius: 18px;
     /* background: rgba(0,0,0,0); */
-    color: #bb9af7;
-    position: relative;
-    background: linear-gradient(to bottom right, #73daca, #f7768e);
+    color: #c6d0f5;
+    /* position: relative; */
+    /* background: linear-gradient(to bottom right, #414559, #e78284, #ef9f76, #e5c890, #a6d189, #85c1dc, #ca9ee6); */
+    background-color: #414559;
     padding: 1px;
 }
 
@@ -28,20 +21,24 @@ window {
     border-radius: 5px;
     border:none;
     outline:none;
-    /* color: white; */
-    color: #bb9af7;
+    color: white; 
+    color: #c6d0f5;
     /* background: @base1; */
-    background-color: #0a0a0a;
+    /* background-color: #737994; */
+    
 }
 
 #inner-box {
     /* background: @base3; */
+    /* background: #737994; */
+    opacity: 1;
+    border-radius: 10px;
 }
 
 #outer-box {
-    margin: 3px;
-    padding:15px;
-    background-color: #0a0a0a;
+    margin: 5px;
+    padding: 30px;
+    background-color: @base;
     border-radius: 18px;
 }
 
@@ -55,7 +52,7 @@ window {
 
 #entry:selected {
     color: black;
-    background-color: @highlight;
+    background-color: @mantle;
     border:none;
     outline:none;
 }

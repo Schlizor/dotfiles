@@ -1,4 +1,5 @@
 \.git
+install.sh
 misc
 #LICENCSE
 ^/.*\.org
