@@ -73,7 +73,11 @@ install_with_yay "${necessary[@]}"
 #--------------------Clone Dotfiles and stow them to .config--------
 
 cd "$HOME/.dotfiles" || exit
-stow .
+
+for dir in */; do
+    stow "$dir"
+done
+
 cd 
 
 #---------------------Install oh my Zsh-------------------------------
