@@ -73,11 +73,39 @@ ZSH_THEME="agnoster"
 plugins=(git fast-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
+#source /opt/ros/jazzy-base/setup.zsh
+
+alias whichRos="echo $ROS_DISTRO"
+alias rosNoetic='source /opt/ros/noetic/setup.zsh'
+alias rosJazzy='source /opt/ros/jazzy-base/setup.zsh'
+
 
 alias dots="cd ~/.dotfiles"
+
+alias eb="code .zshrc"
+alias sb="source .zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
+
+_colcon_prefix_chain_zsh_source_script() {
+  if [ -f "$1" ]; then
+    if [ -n "$COLCON_TRACE" ]; then
+      echo "# . \"$1\""
+    fi
+    . "$1"
+  else
+    echo "not found: \"$1\"" 1>&2
+  fi
+}
+
+# source this prefix
+# setting COLCON_CURRENT_PREFIX avoids determining the prefix in the sourced script
+COLCON_CURRENT_PREFIX="$(builtin cd -q "`dirname "${(%):-%N}"`" > /dev/null && pwd)"
+_colcon_prefix_chain_zsh_source_script "$COLCON_CURRENT_PREFIX/local_setup.zsh"
+
+unset COLCON_CURRENT_PREFIX
+unset _colcon_prefix_chain_zsh_source_script
 
 
 # User configuration

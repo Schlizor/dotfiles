@@ -59,6 +59,12 @@ packages=(
     teams
     thunderbird
     steam
+    make
+    neovim
+    luarocks
+    ripgrep
+    fd
+    gvfs-smb
 )
 
 #--------------------Program start----------------------------------
