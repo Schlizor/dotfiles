@@ -3,7 +3,7 @@
 # Scripts for refreshing waybar, rofi, swaync, pywal colors
 
 # Kill already running processes
-_ps=(waybar wofi swaync hyprpaper)
+_ps=(waybar wofi swaync)
 for _prs in "${_ps[@]}"; do
     if pidof "${_prs}" >/dev/null; then
         pkill "${_prs}"

@@ -6,9 +6,9 @@
 }
 
 #waybar {
-	font-family: 'JetBrainsMono Nerd Font', monospace;
-	font-size: 1.1em;
-	font-weight: 400;
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 1.1em;
+  font-weight: 400;
   color: @text;
   background: @surface1;
   border-radius: 10px;
@@ -31,7 +31,7 @@
   border-radius: 4px;
   background-color: @base02;
 }
-   
+
 #workspaces button.urgent {
   color: rgba(238, 46, 36, 1);
 }
@@ -51,7 +51,7 @@
   border-left: none;
 }
 
-#idle_inhibitor{
+#idle_inhibitor {
   margin: 2px 2px 2px 2px;
   padding: 4px 4px;
   background-color: @base;
@@ -59,14 +59,27 @@
   min-width: 25px;
 }
 
-#custom-power{
+#custom-power {
   background: @red;
   margin: 2px 2px 2px 2px;
   padding: 4px 11px 4px 11px;
   border-radius: 4px;
 }
 
-#mode, #battery, #cpu, #memory, #network, #pulseaudio, #backlight, #custom-storage, #custom-notification, #custom-weather, #custom-mail, #clock, #temperature, #language{
+#mode,
+#battery,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#backlight,
+#custom-storage,
+#custom-notification,
+#custom-weather,
+#custom-mail,
+#clock,
+#temperature,
+#language {
   margin: 2px 2px 2px 2px;
   padding: 4px 11px 4px 11px;
   background-color: @base;
@@ -94,12 +107,13 @@
 
 #window {
   font-size: 0.9em;
-	font-weight: 400;
-	font-family: monospace;
+  font-weight: 400;
+  font-family: monospace;
 }
 
 #language {
-	font-size: 0.9em;
-	font-weight: 500;
-	letter-spacing: -1px;
+  font-size: 0.9em;
+  font-weight: 500;
+  letter-spacing: -1px;
 }
+
