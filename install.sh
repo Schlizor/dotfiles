@@ -65,6 +65,7 @@ packages=(
     ripgrep
     fd
     gvfs-smb
+    blueman
 )
 
 #--------------------Program start----------------------------------

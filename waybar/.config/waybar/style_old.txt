@@ -1,0 +1,119 @@
+@import "frappe.css";
+
+* {
+  transition: none;
+  box-shadow: none;
+}
+
+#waybar {
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 1.1em;
+  font-weight: 400;
+  color: @text;
+  background: @surface1;
+  border-radius: 10px;
+}
+
+#workspaces {
+  margin: 0 4px;
+}
+
+#workspaces button {
+  margin: 4px 0;
+  padding: 0 4px;
+  color: @overlay1;
+}
+
+#workspaces button.visible {
+}
+
+#workspaces button.active {
+  border-radius: 4px;
+  background-color: @base02;
+}
+
+#workspaces button.urgent {
+  color: rgba(238, 46, 36, 1);
+}
+
+#tray {
+  margin: 4px 4px 4px 4px;
+  border-radius: 4px;
+  background-color: @base02;
+}
+
+#tray * {
+  padding: 0 6px;
+  border-left: 1px solid @base00;
+}
+
+#tray *:first-child {
+  border-left: none;
+}
+
+#idle_inhibitor {
+  margin: 2px 2px 2px 2px;
+  padding: 4px 4px;
+  background-color: @base;
+  border-radius: 4px;
+  min-width: 25px;
+}
+
+#custom-power {
+  background: @red;
+  margin: 2px 2px 2px 2px;
+  padding: 4px 11px 4px 11px;
+  border-radius: 4px;
+}
+
+#mode,
+#battery,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#backlight,
+#custom-storage,
+#custom-notification,
+#custom-weather,
+#custom-mail,
+#clock,
+#temperature,
+#language {
+  margin: 2px 2px 2px 2px;
+  padding: 4px 11px 4px 11px;
+  background-color: @base;
+  border-radius: 4px;
+  min-width: 25px;
+}
+
+#pulseaudio.muted {
+  color: @red;
+}
+
+#pulseaudio.bluetooth {
+  color: @blue;
+}
+
+#clock {
+  margin-left: 0px;
+  margin-right: 4px;
+  background-color: transparent;
+}
+
+#temperature.critical {
+  color: @red;
+}
+
+#window {
+  font-size: 0.9em;
+  font-weight: 400;
+  font-family: monospace;
+}
+
+#language {
+  font-size: 0.9em;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
