@@ -66,6 +66,7 @@ packages=(
     fd
     gvfs-smb
     blueman
+    xdg-desktop-portal-gtk
 )
 
 #--------------------Program start----------------------------------
