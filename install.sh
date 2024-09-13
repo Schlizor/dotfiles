@@ -68,6 +68,7 @@ packages=(
     gvfs-smb
     blueman
     xdg-desktop-portal-gtk
+    OpenTabletDriver
 )
 
 #--------------------Program start----------------------------------
