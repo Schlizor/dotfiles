@@ -1,3 +1,5 @@
 https://github.com/aniruddhgutta/hyprsimple --Waybar inspo
 
 https://github.com/JohnOberhauser/Varda-Theme/blob/main/hypr/scripts/screenshots/ --Screenshots
+
+https://github.com/mylinuxforwork/dotfiles/blob/main/share/dotfiles/.config --Skripts

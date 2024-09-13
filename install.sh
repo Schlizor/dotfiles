@@ -29,7 +29,7 @@ necessary=(
 
 # Liste der Pakete
 packages=(
-    alacritty
+    kitty
     waybar
     hyprland
     wofi
@@ -39,6 +39,7 @@ packages=(
     pipewire
     wireplumber
     xdg-desktop-portal-hyprland
+    yazi
     qt5-wayland
     qt6-wayland
     playerctl
