@@ -92,7 +92,8 @@ button:hover {
 
 #clock {
   padding: 0 7px;
-  color: @sky;
+  color: @sapphire;
+  font-weight: bold;
 }
 #clock:hover {
   background-color: rgba(0, 0, 0, 0.2);
