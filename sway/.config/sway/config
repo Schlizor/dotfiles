@@ -32,7 +32,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term alacritty
+set $term kitty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -42,15 +42,18 @@ include /etc/sway/config-vars.d/*
 
 ### Set Wallpaper
 
-output "*" bg /home/thomas/Pictures/wallpaper.jpg fill
+output "*" bg /home/thomas/Pictures/floyd.png fill
 
-#Display Configuration -> xrandr --query to get all displays
+ #Display Configuration -> xrandr --query to get all displays
 
 bindswitch lid:on output eDP-1 disable
 bindswitch lid:off output eDP-1 enable
 
-output eDP-1 mode 1920x1080@60Hz pos 750,1440
-output DP-1 mode 3440x1440@59.973Hz pos 0,0
+#output eDP-1 mode 1920x1080@60Hz pos 750,1440
+#output DP-1 mode 3440x1440@59.973Hz pos 0,0
+
+output DP-2, 3440x1440@99.98Hz pos 0,0
+output DP-3, 2560x1440@144.00Hz pos 3440,0
 
 #StandardOutput
 #output DP-1 mode 1920x1080@59.973Hz pos 0,0
