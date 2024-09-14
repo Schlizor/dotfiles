@@ -73,6 +73,9 @@ ZSH_THEME="agnoster"
 plugins=(git fast-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
+
+source /usr/local/texlive/2024/bin/x86_64-linux
+
 source /opt/ros/jazzy-base/setup.zsh
 
 alias whichRos="echo $ROS_DISTRO"
@@ -83,8 +86,8 @@ alias rosJazzy='source /opt/ros/jazzy-base/setup.zsh'
 alias dots="cd ~/.dotfiles"
 alias fhnotes="nvim ~/Documents/FH_Vault/Vault"
 
-alias eb="code .zshrc"
-alias sb="source .zshrc"
+alias eb="code ~/.zshrc"
+alias sb="source ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
