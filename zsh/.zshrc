@@ -78,6 +78,13 @@ source /usr/local/texlive/2024/bin/x86_64-linux
 
 source /opt/ros/jazzy-base/setup.zsh
 
+#initilize ros2 Workspace
+source $HOME/ros2_ws/install/setup.zsh
+
+#Colcon Autocompletion
+source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.zsh
+
+
 alias whichRos="echo $ROS_DISTRO"
 alias rosNoetic='source /opt/ros/noetic/setup.zsh'
 alias rosJazzy='source /opt/ros/jazzy-base/setup.zsh'
