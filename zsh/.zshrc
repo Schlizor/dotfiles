@@ -10,6 +10,9 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="agnoster"
 
+#necessary for Wayland (e.g. Rviz2 will not run otherwise)
+export QT_QPA_PLATFORM=xcb
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -76,8 +79,8 @@ source $ZSH/oh-my-zsh.sh
 
 source /usr/local/texlive/2024/bin/x86_64-linux
 
-source /opt/ros/jazzy-base/setup.zsh
-
+#source /opt/ros/jazzy/setup.zsh
+source /opt/ros/noetic/setup.zsh
 #initilize ros2 Workspace
 source $HOME/ros2_ws/install/setup.zsh
 
@@ -147,3 +150,4 @@ unset _colcon_prefix_chain_zsh_source_script
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+# Create a custom prompt segment to show the OS symbol
