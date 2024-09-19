@@ -11,7 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({ { import = "thomas.plugins" }, { import = "thomas.plugins.lsp" } }, {
+require("lazy").setup({ import = "thomas.plugins" }, {
   checker = {
   enabled = true,
   notify = false,
@@ -19,4 +19,18 @@ require("lazy").setup({ { import = "thomas.plugins" }, { import = "thomas.plugin
 change_detection = {
   notify = false,
 },
+})
+
+-- [[ Basic Autocommands ]]
+--  See `:help lua-guide-autocommands`
+
+-- Highlight when yanking (copying) text
+--  Try it with `yap` in normal mode
+--  See `:help vim.highlight.on_yank()`
+vim.api.nvim_create_autocmd('TextYankPost', {
+  desc = 'Highlight when yanking (copying) text',
+  group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
+  callback = function()
+    vim.highlight.on_yank()
+  end,
 })

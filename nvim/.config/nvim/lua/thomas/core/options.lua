@@ -13,8 +13,17 @@ opt.shiftwidth = 2 -- 2 spaces for indent width
 opt.expandtab = true -- expand tab to spaces
 opt.autoindent = true -- copy indent from current line when starting new one
 
+-- Minimal number of screen lines to keep above and below the cursor.
+vim.opt.scrolloff = 10
+
+-- Preview substitutions live, as you type!
+opt.inccommand = 'split'
+
 -- line wrapping
 opt.wrap = false -- disable line wrapping
+
+-- Enable break indent
+opt.breakindent = true
 
 -- search settings
 opt.ignorecase = true -- ignore case when searching
@@ -34,8 +43,16 @@ opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 -- backspace
 opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
 
--- clipboard
-opt.clipboard:append("unnamedplus") -- use system clipboard as default register
+-- Sync clipboard between OS and Neovim.
+--  Schedule the setting after `UiEnter` because it can increase startup-time.
+--  Remove this option if you want your OS clipboard to remain independent.
+--  See `:help 'clipboard'`
+vim.schedule(function()
+    opt.clipboard = 'unnamedplus'
+  end)
+
+-- Save undo history
+vim.opt.undofile = true
 
 -- split windows
 opt.splitright = true -- split vertical window to the right
@@ -43,3 +60,8 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
+
+vim.opt.mouse = 'a'
+
+vim.opt.list = true
+vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
