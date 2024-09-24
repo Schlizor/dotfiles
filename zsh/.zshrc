@@ -151,3 +151,6 @@ unset _colcon_prefix_chain_zsh_source_script
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # Create a custom prompt segment to show the OS symbol
+# ~/.zshrc
+
+eval "$(starship init zsh)"

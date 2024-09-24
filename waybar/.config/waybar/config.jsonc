@@ -12,8 +12,8 @@
   //"modules-right": ["battery", "network", "bluetooth", "pulseaudio", "clock", "custom/notifications"],
 
   "modules-left": ["hyprland/workspaces", "idle_inhibitor", "network"],
-  "modules-center": ["hyprland/window"],
-  "modules-right": ["pulseaudio", "backlight", "cpu", "memory", "temperature", "battery", "tray", "custom/notification", "clock", "custom/power"],
+  "modules-center": ["hyprland/window", "custom/music"],
+  "modules-right": ["pulseaudio","bluetooth", "backlight", "cpu", "memory", "temperature", "battery", "tray", "custom/notification", "clock", "custom/power"],
 
   "custom/notifications": {
     "tooltip": true,
@@ -43,15 +43,15 @@
     "on-triple-click": "playerctl previous",
   },
 
-  "custom/nowplaying": {
+  "custom/music": {
     "format": "󰎇 {}",
-    "interval": 1,
-    "exec": "~/.config/scripts/nowplaying",
+    "escape": true,
+    "interval": 5,
+    "tooltip": true,
+    "exec": "playerctl metadata --format='{{ title }}'",
     "on-click": "playerctl play-pause",
-    "on-double-click": "playerctl next",
-    "on-triple-click": "playerctl previous",
-    "max-length": 60,
-  },
+    "max-length": 70
+},
 
   "custom/power": {
     "format": "⏻ ",
@@ -79,17 +79,21 @@
     "on-click": "~/.config/scripts/swww-pywal",
   },
 
-  "idle_inhibitor": {
-    "format": "{icon}",
-    "format-icons": {
-        "activated": " ",
-        "deactivated": " "
-      }
-  },
-
+"idle_inhibitor": {
+	"tooltip": true,
+	"tooltip-format-activated": "Idle_inhibitor active",
+	"tooltip-format-deactivated": "Idle_inhibitor not active",
+	"format": "{icon}",
+	"format-icons": {
+		"activated": " ",
+		"deactivated": " ",
+	}
+},
   "hyprland/workspaces": {
     "format": "{icon}",
     "on-click": "activate",
+    "active-only": false,
+    "force_display": [1,2,3,4,5,6,7,8,9,10],
     "format-icons": {
       //"active": " ",
       "urgent": " ",
