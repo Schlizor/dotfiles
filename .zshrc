@@ -9,8 +9,6 @@ plugins=(git fast-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
-source $HOME/workspaces/go2_ws/devel/setup.zsh
-
 if [[ -f /etc/os-release && "$(grep '^ID=' /etc/os-release)" == "ID=ubuntu" ]]; then
 
     source /usr/local/texlive/2024/bin/x86_64-linux 
