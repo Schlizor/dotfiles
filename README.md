@@ -8,6 +8,7 @@ My Main Window Manager is Hyprland but I have also desktop environment (KDE) ins
 For editing text I am using Neovim (btw).
 
 Have fun exploring, you definitely will find some issues 😄
+I am using GNU Stow to create symlinks to the desired destination.
 
 # Pictures 🖼️
 
