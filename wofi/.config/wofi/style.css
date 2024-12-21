@@ -1,0 +1,58 @@
+@import "mocha.css";
+
+* {
+    font-family: JetBrains Mono Nerd Font;
+}
+
+window {
+    /* border: 1px solid @highlight; */
+    border-radius: 18px;
+    /* background: rgba(0,0,0,0); */
+    color: #c6d0f5;
+    /* position: relative; */
+    /* background: linear-gradient(to bottom right, #414559, #e78284, #ef9f76, #e5c890, #a6d189, #85c1dc, #ca9ee6); */
+    background-color: #414559;
+    padding: 1px;
+}
+
+#input {
+    margin-bottom: 15px;
+    padding: 3px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    color: #c6d0f5;
+    /* background: @base1; */
+    /* background-color: #737994; */
+
+}
+
+#inner-box {
+    /* background: @base3; */
+    /* background: #737994; */
+    opacity: 1;
+    border-radius: 10px;
+}
+
+#outer-box {
+    margin: 5px;
+    padding: 30px;
+    background-color: @base;
+    border-radius: 18px;
+}
+
+#text {
+    padding: 5px;
+}
+
+/* #entry:nth-child(even) { */
+/*     background-color: @base1; */
+/* } */
+
+#entry:selected {
+    color: black;
+    background-color: @mantle;
+    border: none;
+    outline: none;
+}
