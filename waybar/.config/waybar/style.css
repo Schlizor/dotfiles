@@ -1,0 +1,143 @@
+@import "mocha.css";
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "RecMonoLinear Nerd Font", monospace;
+    font-size: 13px;
+    min-height: 0;
+}
+
+#waybar {
+    background: transparent;
+    border-radius: 10px;
+    /* Rounded corners for a floating effect */
+    margin: 20px 20px;
+    /* Adjust margins to control distance from edges */
+    padding: 5px;
+    /* Padding inside the bar */
+}
+
+#window {
+    background: @surface2;
+    border-top: 2px solid @green;
+}
+
+tooltip {
+    background: @surface0;
+    color: @text;
+}
+
+#custom-power,
+#tray,
+#custom-notifications {
+    background: @surface2;
+    padding: 0 5px 0 5px;
+    border-top: 2px solid @green;
+}
+
+#custom-power {
+    color: @red;
+}
+
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#battery {
+    background: @surface2;
+    padding: 0 5px 0 5px;
+    border-top: 2px solid @green;
+}
+
+#clock {
+    background: @surface0;
+    padding: 0 5px 0 5px;
+    border-top: 2px solid @green;
+}
+
+#network {
+    background: @surface0;
+    padding: 0 15px 0 7px;
+    border-top: 2px solid @green;
+}
+
+#pulseaudio {
+    background: @surface2;
+    padding: 0 10px 0 7px;
+    border-top: 2px solid @green;
+}
+
+#mpd,
+#idle_inhibitor,
+#power-profiles-daemon {
+    background: @surface0;
+    padding: 0 5px 0 5px;
+    border-top: 2px solid @green;
+}
+
+#workspaces {
+    background: @surface2;
+    padding: 3px 3px 3px 3px;
+    border-top: 2px solid @green;
+}
+
+#workspaces button {
+    padding: 0 6 0 6px;
+    background-color: transparent;
+}
+
+#workspaces button.active {
+    background: @base;
+    padding: 0 3px 0 3px;
+    border-bottom: 3px solid @green;
+}
+
+#workspaces button.urgent {
+    background: @red;
+    color: @base;
+}
+
+#custom-right-arrow-dark,
+#custom-left-arrow-dark {
+    color: @surface2;
+    background: @surface0;
+    font-size: 21px;
+
+}
+
+#custom-right-arrow-dark-border,
+#custom-left-arrow-dark-border {
+    color: @surface2;
+    background: @surface0;
+    font-size: 21px;
+    border-top: 2px solid @green;
+}
+
+#custom-right-arrow-light,
+#custom-left-arrow-light {
+    color: @surface0;
+    background: @surface2;
+    font-size: 21px;
+}
+
+#custom-right-arrow-light-border,
+#custom-left-arrow-light-border {
+    color: @surface0;
+    background: @surface2;
+    font-size: 21px;
+    border-top: 2px solid @green;
+}
+
+#custom-left-arrow-end-dark {
+    background: transparent;
+    color: @surface0;
+    font-size: 21px;
+}
+
+#custom-right-arrow-end-light,
+#custom-left-arrow-end-light {
+    background: transparent;
+    color: @surface2;
+    font-size: 21px;
+}
